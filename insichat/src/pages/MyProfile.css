@@ -1,0 +1,117 @@
+.main_my_profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    height:85vh;
+    width:85vw;
+    background-color: #ededed;
+    box-shadow: -1px 2px 30px -4px rgba(0,0,0,0.65);
+  
+  }
+  .main_my_profile>header{
+  display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px rgb(206, 205, 205) solid;
+    background-color: rgb(226, 226, 226);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile{
+    height: 100%;
+    width: 100%;
+}
+.user_profile{
+    padding-top: 1.5rem;
+    margin: auto;
+    display: flex;
+    width: 90%;
+    height: 95%;
+}
+.user_profile_table{
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    padding:0;
+}
+.user_profile_table>li{
+    width: 80%;
+    height: 9rem;
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    align-items: center;
+    background-color: #77767615;
+    
+    
+}
+.user_profile_table>li>.my_profile_avatar{
+    width: 50%;
+   padding-top:1rem;
+    margin: auto;
+   
+}
+.user_profile_table>li>div{
+    width: 100%;
+    height: 50%;
+    font-size: 0.8rem;
+    color:#858484;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.user_profile_table>li>div>p{
+    font-size: 1rem;
+    color:#000000;
+    margin-top: 1em;
+}
+.my_profile_button{
+    border:0;
+    background:rgba(143, 143, 143, 0.521);
+    outline:none;
+    font-weight: 100;
+    width: 30%;
+    height: 30%;
+    border-radius: 6px;
+    cursor: pointer;
+    
+}
+.user_profile_table>li.my_profile_go_back{
+    width: 30%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border:1px solid #5e5d5d;
+}
+.user_profile_table>li.my_profile_go_back>a>button{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    
+}
+
+.user_profile_active_groups{
+    border: 1px solid #cfcfcf;
+    list-style: none;
+    width: 50%;
+    height: 95%;
+    justify-content: center;
+    padding:0
+}
+.user_profile_active_groups>h1{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.user_profile_active_groups>header{
+    display: flex;
+      width: 100%;
+      height: 100px;
+      border-bottom: 1px rgb(206, 205, 205) solid;
+      background-color: rgb(226, 226, 226);
+      justify-content: space-between;
+      align-items: center;
+  }

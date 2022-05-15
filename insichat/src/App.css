@@ -1,0 +1,15 @@
+.App{
+  display:grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.main{
+  display: flex;
+  margin-top: -10px;
+  height:85vh;
+  width:85vw;
+  background-color: #ededed;
+  box-shadow: -1px 2px 30px -4px rgba(0,0,0,0.65);
+
+}

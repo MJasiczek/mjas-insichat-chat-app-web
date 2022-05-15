@@ -1,0 +1,24 @@
+.blockedChat_main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   background-color: rgba(80, 80, 80, 0.973);
+
+}
+.blockedChat_main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.h3{
+    color:white;
+    padding: 2rem;
+    text-shadow: 2px 10px 10px rgba(80, 80, 80, 0.973);
+}
+.h4{
+    color:rgb(12, 201, 97);
+    text-shadow: 2px 10px 10px rgba(80, 80, 80, 0.973);
+}
