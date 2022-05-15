@@ -1,0 +1,7 @@
+.alert{
+    box-sizing: border-box;
+    font: white;
+    background-color: rgb(201, 22, 22);
+    width: 100%;
+    height: 4rem;
+}

@@ -1,0 +1,21 @@
+.user_list{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    margin-top:20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc9c9;
+    z-index: 10;
+    border-bottom: 1px solid grey;
+    justify-content: center;
+}
+.user_list_context{
+    
+    width: 90%;
+}
+.user_list_context_details{
+   
+    
+   
+    position: relative;
+}

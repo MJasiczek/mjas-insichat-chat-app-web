@@ -1,0 +1,347 @@
+.login{
+    display: grid;
+    position: absolute;
+    place-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #cccccc;
+    background: linear-gradient(to bottom right,rgb(248, 248, 248) 0%, #828686 100% )
+}
+.login_field{
+    display: grid;
+    position: relative;
+    max-width: 700px;
+    min-width: 500px;
+    height: 500px;
+    place-content: center;
+    text-align: center;
+}
+
+.login_main{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 485px;
+    background: rgba(248, 248, 248, 0.65);
+    width:35vw;
+    height: 45vh;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 10px;
+    z-index: 10;
+     
+    box-shadow: 2px 10px 40px rgba(22,20,19,0.4);
+}
+form>h1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateY(-20px);
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: -2px 5px 50px rgba(19, 17, 17, 0.4);
+    color: #4d4d4d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login_main > form{
+    
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.login_main> .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    border-radius: 10px;
+    color:white;
+   
+    clip: rect(0px,800px,800px,350px); /*laptop */
+    /*clip: rect(0px,800px,800px,250px); /*laptop L*/
+     /*clip: rect(0px,8000px,800px,445px); /*4k*/
+}
+.sign_in{
+    float: right;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom right,rgb(78, 78, 78) 0%, #2f7a55 100% );
+    box-shadow:1px 10px 25px rgba(19, 17, 17, 0.15);
+    
+    
+}
+.open-sign_up{
+    animation: slideright 1s linear forwards;
+}
+.open-sign_in{
+    animation: sliderleft 1s linear forwards;
+}
+.sign_in>.sign_in_content{
+    justify-content: center;
+    margin: auto;
+}
+.sign_in>.sign_in_content>h1{
+   transform: translateY(-50px);
+}
+.sign_in>.sign_in_content>button{
+    transform: translateY(50px);
+    color: white;
+    display: block;
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+    background-color:rgba(184, 182, 182, 0.85) ;
+    border: 1px solid #8b8b8b96;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow:-2px 10px 25px rgba(19, 17, 17, 0.15);
+    font-weight: 500;
+    letter-spacing: 1px;
+ }
+ .sign_up{
+    float: left;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to bottom right,rgb(78, 78, 78) 0%, #2f7a55 100% );
+    box-shadow:1px 10px 25px rgba(19, 17, 17, 0.15);
+ }
+ .sign_up>.sign_up_content{
+    justify-content: center;
+    margin: auto;
+}
+.sign_up>.sign_up_content>h1{
+   transform: translateY(-50px);
+}
+.sign_up>.sign_up_content>button{
+    transform: translateY(50px);
+    color: white;
+    display: block;
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+    background-color:rgba(184, 182, 182, 0.85) ;
+    border: 1px solid #8b8b8b96;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow:-2px 10px 25px rgba(19, 17, 17, 0.15);
+    font-weight: 500;
+    letter-spacing: 1px;
+ }
+form>input{
+    display: block;
+    height: 30px;;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   background:rgba(255, 255, 255, 0.65);
+   border: 1px solid rgba(255, 255, 255, 0.65);
+    outline: 0;
+    outline-width: 0;
+    border-radius: 3px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.2s ease-out;
+}
+form>input:hover{
+    background-color:rgba(255, 255, 255, 0.85) ;
+}
+form>input:focus{
+    background-color:rgba(255, 255, 255, 1) ;
+    box-shadow: 0px 4px 1px #75e2ac;
+    color: #817c7c;
+}
+form>button{
+    display: block;
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+    background-color:rgba(77, 236, 144, 0.85) ;
+    border: 1px solid #8b8b8b96;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 0;
+    box-shadow:-2px 10px 25px rgba(19, 17, 17, 0.15);
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+form>.password-forgot{
+    margin-top:1rem;
+}
+form>.password-forgot>a{
+    text-decoration: none;
+    color:rgb(78, 78, 78);
+    outline: none;
+}
+form>.password-forgot>a:hover{
+    text-decoration: none;
+    color:rgba(77, 236, 144, 0.85);
+    outline: none;
+}
+form>.password-forgot>h4{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.socials_login>p{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 17px;
+}
+.socials_login{
+    position: relative;
+    width: 100%;
+
+}
+.bbls{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    list-style: none;
+}
+
+.bbls>li{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    bottom:-160px;
+    animation: bblsAnim 25s infinite;
+    transition-timing-function: linear;
+}
+.bbls>li:nth-child(1){
+    left:10%;
+    background-color: rgba(255, 255, 255, 0.25);
+     animation-duration: 17s;
+     animation-delay: 2s;
+}
+.bbls>li:nth-child(2){
+    left:20%;
+    background-color: rgba(255, 255, 255, 0.25);
+    animation-delay: 4s;
+}
+.bbls>li:nth-child(3){
+    left:25%;
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 80px;
+    width: 80px;
+    animation-duration: 20s;
+    
+}
+.bbls>li:nth-child(4){
+    left:35%;
+    background-color: rgba(255, 255, 255, 0.25);;
+    animation-duration: 22s;
+}
+.bbls>li:nth-child(5){
+    left:45%;
+    background-color: rgba(255, 255, 255, 0.13);
+    height: 80px;
+    width: 80px;
+    animation-duration: 18s;
+    animation-delay: 7s;
+}
+.bbls>li:nth-child(6){
+    left:65%;
+    background-color: rgba(255, 255, 255, 0.13);
+   
+    animation-delay: 9s;
+}
+.bbls>li:nth-child(7){
+    left:80%;
+    background-color: rgba(255, 255, 255, 0.13);
+    height: 140px;
+    width: 140px;
+   
+    animation-delay: 11s;
+}
+
+.sign-up-alert{
+    width: 100%;
+    background-color: crimson;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    
+}
+
+@keyframes bblsAnim{
+    0% {transform: translateY(0);}
+    100%{transform: translateY(-1500px);}
+}
+@keyframes slideright{
+    0%{
+        clip: rect(0px,800px, 800px, calc(800px - 10px)-385px);
+      }
+      30%{
+           
+
+            clip: rect(0px, 800px, 800px, calc(800px - 480px));
+      }
+      /*  we want the width to be slightly larger here  */
+      50%{
+         clip: rect(0px, calc(800px / 2 + 480px / 2), 800px, calc(800px / 2 - 480px / 2));
+      }
+      80%{
+            clip: rect(0, 480px, 800px, 0);
+      }
+      100%{
+         
+         clip: rect(0, 350px, 800px, 0);
+      }
+  }
+  @keyframes slideleft{
+    0%{
+        clip: rect(0, 350px, 800px, 0);
+      }
+      30%{
+        clip: rect(0, 480px, 800px, 0);
+
+           
+      }
+      /*  we want the width to be slightly larger here  */
+      50%{
+         clip: rect(0px, calc(800px / 2 + 480px / 2), 800px, calc(800px / 2 - 480px / 2));
+      }
+      80%{
+        clip: rect(0px, 800px, 800px, calc(800px - 480px));
+           
+      }
+      100%{
+         
+        
+         clip: rect(0px,800px, 800px, calc(800px - 10px)-385px);
+      }
+  }
+
+  

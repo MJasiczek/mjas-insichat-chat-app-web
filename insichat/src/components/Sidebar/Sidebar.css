@@ -1,0 +1,73 @@
+.sidebar{
+    display: flex;
+    position: relative;
+    flex:0.35;
+    flex-direction: column;
+}
+.sidebar_header{
+    display: flex;
+    padding:20px;
+    border-right: 1px solid lightgray;
+    justify-content: space-between;
+    
+}
+.sidebar_headerRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 12vw;
+    
+}
+.sidebar_headerLeft{
+    display: flex;
+    align-items: center;
+    
+    min-width: 12vw;
+    
+}
+.sidebar_headerLeft > .avatar{
+cursor: pointer;
+}
+.sidebar_search{
+    display:flex;
+    align-items: center;
+    background-color: #f6f6f660;
+    height: 35px;
+    padding:10px;
+    border-right: 1px solid rgba(128, 128, 128, 0.226);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+}
+.sidebar_search_container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 232, 232);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.sidebar_search_container > .MuiSvgIcon-root{
+    padding:10px;
+ }
+.sidebar_search_container > input{
+   border:none;
+   outline-width: 0;
+   margin-left: 10px;
+   background-color:rgb(235, 232, 232); ;
+   width: 80%;
+}
+.sidebar_chat_groups{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    margin-top:10px;
+    height: 100%;
+    margin-bottom:10px;
+    overflow: scroll;
+   
+
+}
+
+
+/*MINI LOGOUT MENU*/

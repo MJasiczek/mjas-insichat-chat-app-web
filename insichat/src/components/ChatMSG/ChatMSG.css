@@ -1,0 +1,33 @@
+.chat_msg{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom:30px;
+    font-size:14px;
+    background-color: #fff;
+}
+.chat_msg> .chat_main_name{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.chat_msg > .chat_main_time{
+    display:none;
+}
+.chat_msg:hover > .chat_main_time{
+    display: block;
+    position: absolute;
+    font-weight: 400;
+    font-size: xx-small;
+    bottom:-20px;
+    right: -75px;
+    font-style: italic;
+  
+}
+
+.chat_recive{
+    margin-left: auto;
+    background-color: #a8dd7f;
+}
